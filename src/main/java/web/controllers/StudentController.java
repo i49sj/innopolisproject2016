@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import server.service.StudentService;
+import server.service.StudentServiceImpl;
 import server.util.TimeUtil;
 
 import javax.servlet.http.HttpServletRequest;
@@ -89,7 +90,7 @@ public class StudentController {
         return s;
     }
 
-    public void setStudentService(StudentService studentService) {
+    public void setStudentService(StudentServiceImpl studentService) {
         this.studentService = studentService;
     }
 }

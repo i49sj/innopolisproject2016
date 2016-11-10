@@ -3,11 +3,11 @@ package server.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import server.entity.Student;
+import server.entity.Lesson;
 
 /**
- * Created by User on 09.11.2016.
+ * Created by innopolis on 10.11.16.
  */
 @Repository
-public interface StudentRepository extends CrudRepository<Student, Integer> {
+public interface LessonRepository extends CrudRepository<Lesson, Integer> {
 }

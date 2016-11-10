@@ -13,6 +13,7 @@ import java.util.List;
  * Created by User on 07.11.2016.
  */
 public class LessonDAOImplEMF implements LessonDAO{
+
     public LessonDAOImplEMF(){
 
     }

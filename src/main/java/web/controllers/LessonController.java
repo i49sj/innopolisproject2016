@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import server.service.LessonService;
+import server.service.LessonServiceImpl;
 import server.util.TimeUtil;
 
 import javax.servlet.http.HttpServletRequest;
