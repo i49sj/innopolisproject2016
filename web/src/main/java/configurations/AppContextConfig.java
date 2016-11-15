@@ -1,14 +1,13 @@
-package web.configurations;
+package web.src.main.java.configurations;
 
 import org.springframework.beans.factory.annotation.Autowire;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import server.dao.*;
-import server.service.LessonService;
+import common.LessonService;
 import server.service.LessonServiceImpl;
-import server.service.StudentService;
+import common.StudentService;
 import server.service.StudentServiceImpl;
 
 /**

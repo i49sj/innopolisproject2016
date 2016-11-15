@@ -1,4 +1,4 @@
-package web.configurations;
+package web.src.main.java.configurations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;

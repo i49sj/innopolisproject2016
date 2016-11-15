@@ -1,11 +1,8 @@
 package server.service;
 
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import common.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import server.dao.Exception.student.*;
-import server.dao.StudentDAO;
 import server.entity.Student;
 import server.repository.StudentRepository;
 
@@ -14,7 +11,7 @@ import java.util.List;
 /**
  * Created by User on 05.11.2016.
  */
-public class StudentServiceImpl implements StudentService{
+public class StudentServiceImpl implements StudentService {
 
     @Autowired
     private StudentRepository studentRepository;

@@ -1,11 +1,11 @@
-package web.controllers;
+package web.src.main.java.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import server.entity.Student;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import server.service.StudentService;
+import common.StudentService;
 import server.service.StudentServiceImpl;
 import server.util.TimeUtil;
 

@@ -1,4 +1,4 @@
-package web.configurations;
+package web.src.main.java.configurations;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.WebApplicationInitializer;

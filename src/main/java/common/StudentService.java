@@ -1,4 +1,4 @@
-package server.service;
+package common;
 
 import server.entity.Student;
 

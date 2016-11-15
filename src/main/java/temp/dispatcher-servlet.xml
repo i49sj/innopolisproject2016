@@ -14,7 +14,7 @@
     &lt;!&ndash; Enables the Spring MVC @Controller programming model &ndash;&gt;
     <mvc:annotation-driven />
 
-    <context:component-scan base-package="web.controllers" />
+    <context:component-scan base-package="web.src.main.java.springproject.controllers" />
 
     &lt;!&ndash; Resolves views selected for rendering by @Controllers to .jsp resources
         in the /WEB-INF/views directory &ndash;&gt;

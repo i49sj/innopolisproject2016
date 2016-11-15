@@ -1,4 +1,4 @@
-package web.configurations;
+package web.src.main.java.configurations;
 
 import org.hibernate.jpa.HibernatePersistenceProvider;
 import java.util.Properties;
@@ -16,7 +16,6 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
-import server.repository.StudentRepository;
 
 import javax.annotation.Resource;
 
