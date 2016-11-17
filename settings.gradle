@@ -1,2 +1,4 @@
-rootProject.name = 'sl'
-
+rootProject.name = 'studentproject'
+include 'common'
+include 'server'
+include 'web'

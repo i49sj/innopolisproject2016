@@ -23,7 +23,7 @@
             <th width="80">Birth date</th>
         </tr>
             <tr>
-                <jsp:useBean id="student" class="server.entity.Student" scope="application"/>
+                <jsp:useBean id="student" class="Student" scope="application"/>
                 <td><input type="text" name="id" value="${student.id}"/></td>
                 <td><input type="text" name="firstName" value="${student.firstName}"/></td>
                 <td><input type="text" name="lastName" value="${student.lastName}"/></td>

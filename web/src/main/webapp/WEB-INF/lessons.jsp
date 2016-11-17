@@ -18,7 +18,7 @@
         </tr>
         </thead>
         <c:forEach items="${list}" var="lesson">
-            <jsp:useBean id="lesson" scope="page" type="server.entity.Lesson"/>
+            <jsp:useBean id="lesson" scope="page" type="Lesson"/>
             <tr>
                 <td>${lesson.id}</td>
                 <td>${lesson.topic}</td>

@@ -16,7 +16,7 @@
             <th width="80">Date</th>
         </tr>
         <tr>
-            <jsp:useBean id="lesson" class="server.entity.Lesson" scope="application"/>
+            <jsp:useBean id="lesson" class="Lesson" scope="application"/>
             <td><input type="text" name="id" value="${lesson.id}"/></td>
             <td><input type="text" name="topic" value="${lesson.topic}"/></td>
             <td><input type="text" name="description" value="${lesson.description}"/></td>
