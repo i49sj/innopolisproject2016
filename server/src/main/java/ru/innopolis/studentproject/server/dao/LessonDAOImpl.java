@@ -1,10 +1,11 @@
 package ru.innopolis.studentproject.server.dao;
 
 
+import ru.innopolis.studentproject.server.dao.Exception.lesson.*;
 import ru.innopolis.studentproject.server.db.DBConnection;
 import ru.innopolis.studentproject.server.entity.Lesson;
 import ru.innopolis.studentproject.server.util.TimeUtil;
-import server.src.main.java.dao.Exception.lesson.*;
+
 
 import java.sql.*;
 import java.time.LocalDate;

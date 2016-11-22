@@ -1,35 +1,21 @@
-package ru.innopolis.studentproject.server.entity;
+package ru.innopolis.studentproject.common.entity;
 
-import org.hibernate.annotations.GenericGenerator;
-
-import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDate;
 
 /**
- * Created by User on 31.10.2016.
+ * Created by innopolis on 17.11.16.
  */
-@Entity
-@Table(name = "students")
-public class Student{
-
-    @Id
-    @GeneratedValue(generator = "increment")
-    @GenericGenerator(name = "increment", strategy = "increment")
+public class StudentEntity implements Serializable {
     private int id;
-    @Column(name = "firstname")
     private String firstName;
-    @Column(name = "lastname")
     private String lastName;
-    @Column(name = "gender")
     private String gender;
-    @Column(name = "birthdate")
     private LocalDate birthDate;
 
-    public Student(){
+    public StudentEntity(){
 
     }
-
-
 
     public String getFirstName() {
         return firstName;

@@ -23,12 +23,12 @@
             <th width="80">Birth date</th>
         </tr>
             <tr>
-                <jsp:useBean id="student" class="Student" scope="application"/>
-                <td><input type="text" name="id" value="${student.id}"/></td>
-                <td><input type="text" name="firstName" value="${student.firstName}"/></td>
-                <td><input type="text" name="lastName" value="${student.lastName}"/></td>
-                <td><input type="text" name="gender" value="${student.gender}"/></td>
-                <td><input type="text" name="birthDate" value="${student.birthDate}"/></td>
+                <jsp:useBean id="studentEntity" class="Student" scope="application"/>
+                <td><input type="text" name="id" value="${studentEntity.id}"/></td>
+                <td><input type="text" name="firstName" value="${studentEntity.firstName}"/></td>
+                <td><input type="text" name="lastName" value="${studentEntity.lastName}"/></td>
+                <td><input type="text" name="gender" value="${studentEntity.gender}"/></td>
+                <td><input type="text" name="birthDate" value="${studentEntity.birthDate}"/></td>
             </tr>
     </table>
     <input type='submit' value="Save" />

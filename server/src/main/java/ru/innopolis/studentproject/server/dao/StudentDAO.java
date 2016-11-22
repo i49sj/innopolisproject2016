@@ -1,6 +1,7 @@
 package ru.innopolis.studentproject.server.dao;
 
-import server.src.main.java.dao.Exception.student.*;
+
+import ru.innopolis.studentproject.server.dao.Exception.student.*;
 import ru.innopolis.studentproject.server.entity.Student;
 
 

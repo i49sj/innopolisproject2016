@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id=":server:main" external.linked.project.path="$MODULE_DIR$/../../../server" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="studentandlessons" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
   <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/../../../server/src/main/resources/META-INF/rmi-context.xml</file>
+          <file>file://$MODULE_DIR$/../../../server/src/main/java/ru/innopolis/studentproject/server/rmi/RMIServer.java</file>
+          <file>file://$MODULE_DIR$/../../../server/src/main/java/ru/innopolis/studentproject/server/server/RootConfig.java</file>
+        </fileset>
+      </configuration>
+    </facet>
     <facet type="web" name="Web Gradle : server-1.0-SNAPSHOT.war">
       <configuration>
         <webroots>
@@ -30,7 +39,7 @@
     <orderEntry type="library" name="Gradle: org.hibernate:hibernate-core:5.2.2.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.hibernate:hibernate-entitymanager:5.2.2.Final" level="project" />
     <orderEntry type="library" name="Gradle: org.hibernate:hibernate-c3p0:5.2.2.Final" level="project" />
-    <orderEntry type="library" name="Gradle: org.postgresql:postgresql:9.3-1100-jdbc4" level="project" />
+    <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:5.1.40" level="project" />
     <orderEntry type="library" name="Gradle: ma.glasnost.orika:orika-core:1.4.2" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.data:spring-data-jpa:1.10.5.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.aspectj:aspectjrt:1.8.9" level="project" />

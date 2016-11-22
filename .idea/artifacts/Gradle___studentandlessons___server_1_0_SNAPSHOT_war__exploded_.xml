@@ -24,7 +24,6 @@
           <element id="library" level="project" name="Gradle: org.hibernate:hibernate-core:5.2.2.Final" />
           <element id="library" level="project" name="Gradle: org.hibernate:hibernate-entitymanager:5.2.2.Final" />
           <element id="library" level="project" name="Gradle: org.hibernate:hibernate-c3p0:5.2.2.Final" />
-          <element id="library" level="project" name="Gradle: org.postgresql:postgresql:9.3-1100-jdbc4" />
           <element id="library" level="project" name="Gradle: ma.glasnost.orika:orika-core:1.4.2" />
           <element id="library" level="project" name="Gradle: org.springframework.data:spring-data-jpa:1.10.5.RELEASE" />
           <element id="library" level="project" name="Gradle: org.aspectj:aspectjrt:1.8.9" />
@@ -68,6 +67,7 @@
           <element id="library" level="project" name="Gradle: javax.inject:javax.inject:1" />
           <element id="library" level="project" name="Gradle: com.mchange:mchange-commons-java:0.2.3.4" />
           <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.40" />
         </element>
       </element>
       <element id="directory" name="META-INF">

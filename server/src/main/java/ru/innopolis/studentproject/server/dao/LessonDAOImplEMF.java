@@ -1,7 +1,8 @@
 package ru.innopolis.studentproject.server.dao;
 
+import ru.innopolis.studentproject.server.dao.Exception.lesson.*;
 import ru.innopolis.studentproject.server.entity.Lesson;
-import server.src.main.java.dao.Exception.lesson.*;
+
 import ru.innopolis.studentproject.server.db.EntityManagerUtil;
 
 import javax.persistence.EntityManager;

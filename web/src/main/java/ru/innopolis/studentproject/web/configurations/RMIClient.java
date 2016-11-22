@@ -15,7 +15,7 @@ public class RMIClient {
     @Bean
     public StudentService createStudentServiceLink() {
         RmiProxyFactoryBean rmiProxyFactoryBean = new RmiProxyFactoryBean();
-        rmiProxyFactoryBean.setServiceUrl("rmi://localhost:5000/StudentService");
+        rmiProxyFactoryBean.setServiceUrl("rmi://localhost:2000/StudentService");
         rmiProxyFactoryBean.setServiceInterface(StudentService.class);
         rmiProxyFactoryBean.setRefreshStubOnConnectFailure(true);
         rmiProxyFactoryBean.afterPropertiesSet();
@@ -25,7 +25,7 @@ public class RMIClient {
     @Bean
     public LessonService createLessionServiceLink() {
         RmiProxyFactoryBean rmiProxyFactoryBean = new RmiProxyFactoryBean();
-        rmiProxyFactoryBean.setServiceUrl("rmi://localhost:5000/LessionService");
+        rmiProxyFactoryBean.setServiceUrl("rmi://localhost:2000/LessionService");
         rmiProxyFactoryBean.setServiceInterface(LessonService.class);
         rmiProxyFactoryBean.setRefreshStubOnConnectFailure(true);
         rmiProxyFactoryBean.afterPropertiesSet();

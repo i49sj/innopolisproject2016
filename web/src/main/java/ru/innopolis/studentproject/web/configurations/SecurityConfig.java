@@ -18,8 +18,8 @@ import javax.sql.DataSource;
 @ComponentScan("web")
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Autowired
-    DataSource dataSource;
+/*    @Autowired
+    DataSource dataSource;*/
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
@@ -40,11 +40,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     public void configAuthentication(AuthenticationManagerBuilder auth) throws Exception {
-        auth.jdbcAuthentication().dataSource(dataSource)
+/*        auth.jdbcAuthentication().dataSource(dataSource)
                 .usersByUsernameQuery(
                         "select username,password, enabled from users where username=?")
                 .authoritiesByUsernameQuery(
-                        "select username, role from user_roles where username =?");
+                        "select username, role from user_roles where username =?");*/
+        auth
+                .inMemoryAuthentication()
+                .withUser("user").password("password").roles("USER");
+        auth.
+                inMemoryAuthentication()
+                .withUser("admin").password("admin").roles("ADMIN");
+
     }
 
 

@@ -16,12 +16,12 @@
             <th width="80">Date</th>
         </tr>
         <tr>
-            <jsp:useBean id="lesson" class="Lesson" scope="application"/>
-            <td><input type="text" name="id" value="${lesson.id}"/></td>
-            <td><input type="text" name="topic" value="${lesson.topic}"/></td>
-            <td><input type="text" name="description" value="${lesson.description}"/></td>
-            <td><input type="text" name="duration" value="${lesson.duration}"/></td>
-            <td><input type="text" name="lessondate" value="${lesson.lessondate}"/></td>
+            <jsp:useBean id="lessonEntity" class="ru.innopolis.studentproject.common.entity.LessonEntity" scope="application"/>
+            <td><input type="text" name="id" value="${lessonEntity.id}"/></td>
+            <td><input type="text" name="topic" value="${lessonEntity.topic}"/></td>
+            <td><input type="text" name="description" value="${lessonEntity.description}"/></td>
+            <td><input type="text" name="duration" value="${lessonEntity.duration}"/></td>
+            <td><input type="text" name="lessondate" value="${lessonEntity.lessondate}"/></td>
         </tr>
     </table>
     <input type='submit' value="Save" />

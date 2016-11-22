@@ -16,15 +16,15 @@
       <th></th>
     </tr>
     </thead>
-    <c:forEach items="${list}" var="student">
-      <jsp:useBean id="student" scope="page" type="Student"/>
+    <c:forEach items="${list}" var="studentEntity">
+      <jsp:useBean id="studentEntity" scope="page" type="ru.innopolis.studentproject.common.entity.StudentEntity"/>
       <tr>
-        <td>${student.firstName}</td>
-        <td>${student.lastName}</td>
-        <td>${student.gender}</td>
-        <td>${student.birthDate}</td>
-        <td><a href="studentedit/${student.id}">Update</a></td>
-        <td><a href="studentedit/del/${student.id}">Delete</a></td>
+        <td>${studentEntity.firstName}</td>
+        <td>${studentEntity.lastName}</td>
+        <td>${studentEntity.gender}</td>
+        <td>${studentEntity.birthDate}</td>
+        <td><a href="studentedit/${studentEntity.id}">Update</a></td>
+        <td><a href="studentedit/del/${studentEntity.id}">Delete</a></td>
       </tr>
     </c:forEach>
   </table>

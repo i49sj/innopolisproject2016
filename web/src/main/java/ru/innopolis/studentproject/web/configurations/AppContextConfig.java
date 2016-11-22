@@ -6,17 +6,15 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-import ru.innopolis.studentproject.server.service.LessonService;
-import ru.innopolis.studentproject.server.service.LessonServiceImpl;
+import ru.innopolis.studentproject.common.service.LessonService;
+import ru.innopolis.studentproject.common.service.StudentService;
 
-import ru.innopolis.studentproject.server.service.StudentService;
-import ru.innopolis.studentproject.server.service.StudentServiceImpl;
 
 /**
  * Created by User on 05.11.2016.
  */
 @Configuration
-@EnableJpaRepositories(basePackages = "server.server.repository")
+//@EnableJpaRepositories(basePackages = "server.server.repository")
 public class AppContextConfig {
 /*
     @Bean(name = "studentDAO",
@@ -34,7 +32,7 @@ public class AppContextConfig {
     }
 */
 
-    @Bean(name = "lessonService",
+ /*   @Bean(name = "lessonService",
             autowire = Autowire.BY_NAME)
     @Scope("singleton")
     public LessonService lessonService(){
@@ -46,5 +44,5 @@ public class AppContextConfig {
     @Scope("singleton")
     public StudentService studentService(){
         return new StudentServiceImpl();
-    }
+    }*/
 }

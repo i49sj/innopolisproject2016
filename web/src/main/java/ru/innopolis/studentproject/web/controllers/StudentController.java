@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import ru.innopolis.studentproject.common.entity.Student;
+import ru.innopolis.studentproject.common.entity.StudentEntity;
 import ru.innopolis.studentproject.common.service.StudentService;
 import ru.innopolis.studentproject.common.util.TimeUtil;
 
@@ -35,7 +35,7 @@ public class StudentController {
     @RequestMapping("studentlist")
     public ModelAndView main() {
         ModelAndView modelAndView = new ModelAndView();
-        List<Student> list = studentService.list();
+        List<StudentEntity> list = studentService.list();
         modelAndView.addObject("list", list);
         modelAndView.setViewName("index");
         return modelAndView;
@@ -82,8 +82,8 @@ public class StudentController {
 
     }
 
-    private Student getRequestStudent(HttpServletRequest req) {
-        Student s = new Student();
+    private StudentEntity getRequestStudent(HttpServletRequest req) {
+        StudentEntity s = new StudentEntity();
         s.setId(Integer.parseInt(req.getParameter("id")));
         s.setFirstName(req.getParameter("firstName"));
         s.setLastName(req.getParameter("lastName"));

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import ru.innopolis.studentproject.common.entity.Lesson;
+import ru.innopolis.studentproject.common.entity.LessonEntity;
 import ru.innopolis.studentproject.common.service.LessonService;
 import ru.innopolis.studentproject.common.util.TimeUtil;
 
@@ -28,7 +28,7 @@ public class LessonController {
     @RequestMapping("lessonlist")
     public ModelAndView main() {
         ModelAndView modelAndView = new ModelAndView();
-        List<Lesson> list = lessonService.list();
+        List<LessonEntity> list = lessonService.list();
         modelAndView.addObject("list", list);
         modelAndView.setViewName("lessons");
         return modelAndView;
@@ -67,8 +67,8 @@ public class LessonController {
         return "redirect:/lessonedit";
     }
 
-    private Lesson getRequestLesson(HttpServletRequest req) {
-        Lesson l = new Lesson();
+    private LessonEntity getRequestLesson(HttpServletRequest req) {
+        LessonEntity l = new LessonEntity();
         l.setId(Integer.parseInt(req.getParameter("id")));
         l.setTopic(req.getParameter("topic"));
         l.setDescription(req.getParameter("description"));

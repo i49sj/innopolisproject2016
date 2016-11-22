@@ -9,8 +9,8 @@
                  http://www.springframework.org/schema/security/spring-security-4.1.xsd">
 
     <http use-expressions="true">
-        <intercept-url pattern="/student**" access="hasRole('ROLE_USER')"/>
-        <intercept-url pattern="/lesson**" access="hasRole('ROLE_ADMIN')"/>
+        <intercept-url pattern="/studentEntity**" access="hasRole('ROLE_USER')"/>
+        <intercept-url pattern="/lessonEntity**" access="hasRole('ROLE_ADMIN')"/>
         <csrf disabled="true"/>
         <form-login
                 login-processing-url="/j_spring_security_check"

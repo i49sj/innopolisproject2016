@@ -17,16 +17,16 @@
             <th></th>
         </tr>
         </thead>
-        <c:forEach items="${list}" var="lesson">
-            <jsp:useBean id="lesson" scope="page" type="Lesson"/>
+        <c:forEach items="${list}" var="lessonEntity">
+            <jsp:useBean id="lessonEntity" scope="page" type="Lesson"/>
             <tr>
-                <td>${lesson.id}</td>
-                <td>${lesson.topic}</td>
-                <td>${lesson.description}</td>
-                <td>${lesson.duration}</td>
-                <td>${lesson.lessondate}</td>
-                <td><a href="lessonedit/${lesson.id}">Update</a></td>
-                <td><a href="lessonedit/del/${lesson.id}">Delete</a></td>
+                <td>${lessonEntity.id}</td>
+                <td>${lessonEntity.topic}</td>
+                <td>${lessonEntity.description}</td>
+                <td>${lessonEntity.duration}</td>
+                <td>${lessonEntity.lessondate}</td>
+                <td><a href="lessonedit/${lessonEntity.id}">Update</a></td>
+                <td><a href="lessonedit/del/${lessonEntity.id}">Delete</a></td>
             </tr>
         </c:forEach>
     </table>

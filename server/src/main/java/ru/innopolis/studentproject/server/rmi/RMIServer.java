@@ -17,24 +17,25 @@ import ru.innopolis.studentproject.server.service.StudentServiceImpl;
 @ComponentScan("ru.innopolis.studentproject.server.service")
 public class RMIServer {
     @Bean
-    public RmiServiceExporter registerStudentService(@Autowired StudentServiceImpl studentService) {
-        RmiServiceExporter rmiServiceExporter = new RmiServiceExporter();
-        rmiServiceExporter.setServiceName("StudentService");
-        rmiServiceExporter.setService(studentService);
-        rmiServiceExporter.setServiceInterface(ru.innopolis.studentproject.common.service.StudentService.class);
-        rmiServiceExporter.setRegistryPort(5000);
-        return rmiServiceExporter;
-    }
-
-    @Bean
     public RmiServiceExporter registerLessionService(@Autowired LessonServiceImpl lessionService) {
         RmiServiceExporter rmiServiceExporter = new RmiServiceExporter();
         //rmiServiceExporter.setRegistryHost("127.0.0.1");
         rmiServiceExporter.setServiceName("LessionService");
         rmiServiceExporter.setService(lessionService);
         rmiServiceExporter.setServiceInterface(ru.innopolis.studentproject.common.service.LessonService.class);
-        rmiServiceExporter.setRegistryPort(5000);
+        rmiServiceExporter.setRegistryPort(2000);
         return rmiServiceExporter;
     }
+
+    @Bean
+    public RmiServiceExporter registerStudentService(@Autowired StudentServiceImpl studentService) {
+        RmiServiceExporter rmiServiceExporter = new RmiServiceExporter();
+        rmiServiceExporter.setServiceName("StudentService");
+        rmiServiceExporter.setService(studentService);
+        rmiServiceExporter.setServiceInterface(ru.innopolis.studentproject.common.service.StudentService.class);
+        rmiServiceExporter.setRegistryPort(2000);
+        return rmiServiceExporter;
+    }
+
 
 }
